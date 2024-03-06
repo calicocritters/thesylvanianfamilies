@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página con Formulario</title>
+    <link rel="stylesheet" href="6estilo.css"> <!-- Enlace a tu archivo CSS -->
+</head>
+<body>
+
+<header>
+    <h1>Mi Página con Formulario</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="https://www.youtube.com/@THEALFREDCHANNEL.">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+        <section>
+            <h2>Contáctanos</h2>
+            <form action="enviar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <p>© 2024 Mi Página con Formulario. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

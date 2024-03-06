@@ -1,0 +1,120 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente de estilo lúdico */
+    background-color: #f5f5f5; /* Color de fondo gris claro */
+    color: #333; /* Color de texto principal */
+    background-image: url("imagenes/ternurines.jpg");
+    background-size: contain; 
+    background-position: 10%;
+    background-repeat: repeat;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #f09fc2; /* Color rosa pastel */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+h2 {
+    color: #ff99cc; /* Color rosa pastel */
+}
+
+footer {
+    background-color: #ffd3e6; /* Color rosa pastel */
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #333;
+    font-size: 14px;
+}
+
+/* Estilos especiales */
+.image {
+    position: relative;
+    display: inline-block;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco transparente */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 5px;
+}
+
+.image:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
